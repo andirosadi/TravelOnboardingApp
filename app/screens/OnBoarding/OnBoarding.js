@@ -51,7 +51,7 @@ const OnBoarding = () =>{
             {onBoardings.map((item, index)=>(
                 <View key={index} style={{width: SIZES.width}}>
                     {/* Image */}
-                    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}> 
+                    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                         <Image
                             source = {item.img}
                             resizeMode = "contain"
@@ -66,7 +66,7 @@ const OnBoarding = () =>{
                         <Text style={{ ...FONTS.body3, textAlign: "center", marginTop: SIZES.base, color: COLORS.gray }}>{item.description}</Text>
                     </View>
                     {/* Button */}
-                    <TouchableOpacity style={{ backgroundColor: COLORS.blue, position: "absolute", bottom: 0, right: 0, width: 150, height: 60,paddingLeft: 20, justifyContent: "center", borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }} onPress={ ()=> console.log("Botton on pressed")}>
+                    <TouchableOpacity style={{ backgroundColor: COLORS.yellow, position: "absolute", bottom: 0, right: 0, width: 150, height: 60,paddingLeft: 20, justifyContent: "center", borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }} onPress={ ()=> console.log("Botton on pressed")}>
                         <Text style={{ ...FONTS.h2, color: COLORS.white }}>{completed ? "Let's Go" : "Skip"}</Text>
                     </TouchableOpacity>
                 </View>
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     },
     dot: {
         borderRadius: SIZES.radius,
-        backgroundColor: COLORS.blue,
+        backgroundColor: COLORS.lightBlue,
         marginHorizontal: SIZES.radius / 2
     },
 })
